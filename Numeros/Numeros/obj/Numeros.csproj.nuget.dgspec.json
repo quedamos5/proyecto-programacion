@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yosi\\Dropbox\\ciclo\\entornos\\proyecto enero\\Numeros\\Numeros\\Numeros.csproj": {}
+    "C:\\Users\\yosi\\Dropbox\\ciclo\\entornos\\proyecto enero\\proyectoc-\\Numeros\\Numeros\\Numeros.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yosi\\Dropbox\\ciclo\\entornos\\proyecto enero\\Numeros\\Numeros\\Numeros.csproj": {
+    "C:\\Users\\yosi\\Dropbox\\ciclo\\entornos\\proyecto enero\\proyectoc-\\Numeros\\Numeros\\Numeros.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yosi\\Dropbox\\ciclo\\entornos\\proyecto enero\\Numeros\\Numeros\\Numeros.csproj",
+        "projectUniqueName": "C:\\Users\\yosi\\Dropbox\\ciclo\\entornos\\proyecto enero\\proyectoc-\\Numeros\\Numeros\\Numeros.csproj",
         "projectName": "Numeros",
-        "projectPath": "C:\\Users\\yosi\\Dropbox\\ciclo\\entornos\\proyecto enero\\Numeros\\Numeros\\Numeros.csproj",
+        "projectPath": "C:\\Users\\yosi\\Dropbox\\ciclo\\entornos\\proyecto enero\\proyectoc-\\Numeros\\Numeros\\Numeros.csproj",
         "packagesPath": "C:\\Users\\yosi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yosi\\Dropbox\\ciclo\\entornos\\proyecto enero\\Numeros\\Numeros\\obj\\",
+        "outputPath": "C:\\Users\\yosi\\Dropbox\\ciclo\\entornos\\proyecto enero\\proyectoc-\\Numeros\\Numeros\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
