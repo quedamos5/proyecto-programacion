@@ -1,4 +1,6 @@
-﻿internal class Program
+﻿using System;
+
+internal class Program
 {
     private static void Main()
     {
@@ -37,7 +39,7 @@
                     //Cualquier input distinto a las opciones dadas saldrá del programa sin acciones
                     break;
             }
-        } while (actual >= 1 || actual <= 6);
+        } while (actual >= 1 && actual <= 6);
         Console.ReadKey();
     }
 
@@ -48,7 +50,23 @@
 
     private static void Parte2()
     {
-        //Aquí código
+        int num = 0;
+        LeerNúmero(ref num);
+        
+        Console.WriteLine($"El factorial de {num} es: {Factorial(num)}"); // Invocación de factorial.
+        Console.ReadKey();
+
+        // El factorial de un número es una multiplicación de ese número
+        // por los números anteriores hasta uno, ej: fact(n) = n * n-1 * n-2...1;
+        // Este trozo de codigo se realizo con una función recursiva para realizar
+        // esta tarea.
+        static int Factorial(int num)
+        {
+            int resta = num >= 1 ? -1 : 1;
+            if (num == 1 || num == -1)
+                return num;
+            return num * Factorial(num + resta); // Se invoca de forma recursiva factorial para recorrer los valores de num.
+        }
     }
 
     private static void Parte3()
@@ -72,11 +90,44 @@
 
     private static void Parte5()
     {
-        //Aquí código
+        // Un número de n dígitos es un número de Armstrong si es
+        // igual a la suma de las n-ésimas potencias de sus dígitos 
+        // ej: 371 -> 3^3 + 7^3 + 1^3 -> 27 + 343 + 1 = 371 -> es Armstrong.
+        int num = 0; 
+        LeerNúmero(ref num);
+
+        if (Armstrong(num) == true)
+        {
+            Console.WriteLine($"{num} es un número Armstrong");
+        } else
+        {
+            Console.WriteLine($"{num} no es un número Armstrong");
+        }
+        Console.ReadKey();
+
+        static bool Armstrong(int num)
+        {
+            string numb = Convert.ToString(num);
+            double numDigitos = numb.Length,
+                   sumaDigitos = 0;
+            foreach (int elem in numb)
+                sumaDigitos += Math.Pow(Convert.ToDouble(elem) - 48, numDigitos); // Bucle for para calcular la suma de los digitos elevados al numero de digitos.
+            return sumaDigitos == num ? true : false;
+        }
     }
 
     private static void Parte6()
     {
         //Aquí código
+    }
+
+    private static void LeerNúmero(ref int num)
+    {
+        // Pedimos la variable y validamos que es un número entero
+        Console.Write("Introduzca un número entero por favor: ");
+        while (!Int32.TryParse(Console.ReadLine(), out num))
+        {
+            Console.WriteLine("Introduzca un número válido por favor: ");
+        }
     }
 }
