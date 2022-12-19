@@ -50,8 +50,7 @@ internal class Program
 
     private static void Parte2()
     {
-        int num = 0;
-        LeerNúmero(ref num);
+        int num = LeerNúmero();
         
         Console.WriteLine($"El factorial de {num} es: {Factorial(num)}"); // Invocación de factorial.
         Console.ReadKey();
@@ -93,27 +92,13 @@ internal class Program
         // Un número de n dígitos es un número de Armstrong si es
         // igual a la suma de las n-ésimas potencias de sus dígitos 
         // ej: 371 -> 3^3 + 7^3 + 1^3 -> 27 + 343 + 1 = 371 -> es Armstrong.
-        int num = 0; 
-        LeerNúmero(ref num);
+        string num = LeerNúmero().ToString(); 
+        double numDigitos = num.Length, sumaDigitos = 0;
 
-        if (Armstrong(num) == true)
-        {
-            Console.WriteLine($"{num} es un número Armstrong");
-        } else
-        {
-            Console.WriteLine($"{num} no es un número Armstrong");
-        }
+        foreach (int elem in num)
+            sumaDigitos += Math.Pow(Convert.ToDouble(elem) - 48, numDigitos); // Bucle for para calcular la suma de los digitos elevados al numero de digitos.
+        Console.WriteLine($"{num}{(sumaDigitos.ToString() == num ? "" : " no")} es un número de Armstrong");
         Console.ReadKey();
-
-        static bool Armstrong(int num)
-        {
-            string numb = Convert.ToString(num);
-            double numDigitos = numb.Length,
-                   sumaDigitos = 0;
-            foreach (int elem in numb)
-                sumaDigitos += Math.Pow(Convert.ToDouble(elem) - 48, numDigitos); // Bucle for para calcular la suma de los digitos elevados al numero de digitos.
-            return sumaDigitos == num ? true : false;
-        }
     }
 
     private static void Parte6()
@@ -121,13 +106,15 @@ internal class Program
         //Aquí código
     }
 
-    private static void LeerNúmero(ref int num)
+    private static int LeerNúmero()
     {
+        int num = 0;
         // Pedimos la variable y validamos que es un número entero
         Console.Write("Introduzca un número entero por favor: ");
         while (!Int32.TryParse(Console.ReadLine(), out num))
         {
             Console.WriteLine("Introduzca un número válido por favor: ");
         }
+        return num;
     }
 }
