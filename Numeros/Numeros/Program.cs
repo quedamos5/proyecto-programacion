@@ -45,7 +45,18 @@ internal class Program
 
     private static void Parte1()
     {
-        //Aquí código
+        int num = LeerNúmero();
+        int primo = 0;
+        //Un número primo es aquel cuyos divisores son el 1 y el mismo.
+        for (int i = 2; i < num; i++)
+            if (num % i == 0)
+                primo++;
+        if (primo == 0)
+            Console.WriteLine("El número introducido es primo");
+        else
+            Console.WriteLine("El número introducido no es primo");
+        Console.WriteLine("Pulse una tecla para continuar");
+        Console.ReadKey();
     }
 
     private static void Parte2()
@@ -70,7 +81,19 @@ internal class Program
 
     private static void Parte3()
     {
-        //Aquí código
+        // Se le pasa como parámetro un número de segundos
+        // y devuelve su conversión a horas, minutos y segundos.
+        int nseg = LeerNúmero();
+        int min = 0;
+        int horas = 0;
+        int reshoras = 0;
+        horas = nseg / 3600;
+        reshoras = nseg % 3600;
+        min = reshoras / 60;
+        nseg = nseg % 60;
+        Console.WriteLine("{0,0:D2} : {1,0:D2} : {2,0:D2}", horas, min, nseg);
+        Console.WriteLine("Pulse una tecla para continuar");
+        Console.ReadKey();
     }
 
     private static void Parte4()
