@@ -108,7 +108,7 @@ internal class Program
 
     private static int LeerNúmero()
     {
-        int num = 0;
+        int num;
         // Pedimos la variable y validamos que es un número entero
         Console.Write("Introduzca un número entero por favor: ");
         while (!Int32.TryParse(Console.ReadLine(), out num))
