@@ -77,7 +77,7 @@ internal class Program
     {
         //La fórmula de la sucesión de pell dados el 0 y el 1 como números iniciales, es:
         // 2 * numero previo + numero previo al previo
-        // osea el tercer número se calcularía: 2 * 1 + 0 = 2.
+        // osea el tercer número se calcularía: 2 * 1 + 0 = 2
         // el cuarto: 2 * 2 + 1 = 5
 
         int[] sucesionPell = { 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
