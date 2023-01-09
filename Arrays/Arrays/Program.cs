@@ -61,7 +61,28 @@ internal class Program
 
   private static void Parte2() 
   {
-    //Aquí código
+    // Pido el tamaño del array
+    Console.WriteLine("Número de elementos del array.\n");
+    int maximoElemeto = LeerNúmero();
+
+    // Los voy introduciendo dentro de elementosArray
+    decimal[] elementosArray = new decimal[maximoElemeto];
+    for (int i = 0; i < maximoElemeto; i++) {
+      Console.Write("\nIntroduce los elementos del array (" + i + ") : ");
+      // Comprobando que sean números
+      while (!decimal.TryParse(Console.ReadLine(), out elementosArray[i])) {
+        Console.Write("\nERROR. Introduzca un número: ");
+      }
+    }
+
+    // Imprimo la array introducida por el usuario
+    Console.Write("\t\nArray introducida.\n");
+    foreach(decimal elementos in elementosArray ) {
+      Console.Write(elementos + " ");
+    }
+
+    Console.Write("\t\n\nEl mínimo elemento del array es: " + elementosArray.Min() + ".");
+    Console.ReadKey();
   }
 
   private static void Parte3() 
