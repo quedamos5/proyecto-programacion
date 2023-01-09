@@ -59,11 +59,44 @@ internal class Program
         //Aquí código
     }
 
+<<<<<<< HEAD
     private static void Parte2()
     {
         // Pido el tamaño del array
         Console.WriteLine("Número de elementos del array.\n");
         int maximoElemeto = LeerNúmero(true);
+=======
+  private static void Parte1() 
+  {
+        // Pido el tamaño del array
+        Console.WriteLine("Número de elementos del array.\n");
+        int maximoElemento = LeerNúmero();
+
+        // Los voy introduciendo dentro de elementosArray
+        decimal[] elementosArray = new decimal[maximoElemento];
+        for (int i = 0; i < maximoElemento; i++)
+        {
+            Console.Write("\nIntroduce los elementos del array (" + i + ") : ");
+            // Comprobando que sean números
+            while (!decimal.TryParse(Console.ReadLine(), out elementosArray[i]))
+            {
+                Console.Write("\nERROR. Introduzca un número: ");
+            }
+        }
+
+        // Imprimo la array introducida por el usuario
+        Console.Write("\t\nArray introducida.\n");
+        foreach (decimal elementos in elementosArray)
+        {
+            Console.Write(elementos + " ");
+        }
+
+        Console.Write("\t\n\nEl máximo elemento del array es: " + elementosArray.Max() + ".");
+        Console.WriteLine("Pulse una tecla para continuar");
+        Console.ReadKey();
+    
+}
+>>>>>>> EduSprint2.1
 
         // Los voy introduciendo dentro de elementosArray
         decimal[] elementosArray = new decimal[maximoElemeto];
