@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "mhwUsx5CwR1Y8rOFxj00rguERLV3lu/Ndn+O8gGsSAM5WB9Mo/BA/A+kEy4rFSxKWJYe0uyhzX1Indis4kfPTg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ModuloPRO\\Desktop\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj",
-=======
-  "dgSpecHash": "moz29yZBxz13iPSh1uFDYoOPKuih5k1yGbbewQRH9v2mXE1ZC3aP92DtyBd+p/tRbD9z2WeZUM3l/K+JyLG1Ng==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Asus\\Documents\\Repositorios\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj",
->>>>>>> EduSprint2.1
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\ModuloPRO\\Desktop\\proyecto-programacion\\Arrays\\Arrays\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

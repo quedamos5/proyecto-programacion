@@ -56,21 +56,9 @@ internal class Program
 
     private static void Parte1()
     {
-        //Aquí código
-    }
-
-<<<<<<< HEAD
-    private static void Parte2()
-    {
         // Pido el tamaño del array
         Console.WriteLine("Número de elementos del array.\n");
-        int maximoElemeto = LeerNúmero(true);
-=======
-  private static void Parte1() 
-  {
-        // Pido el tamaño del array
-        Console.WriteLine("Número de elementos del array.\n");
-        int maximoElemento = LeerNúmero();
+        int maximoElemento = LeerNúmero(true);
 
         // Los voy introduciendo dentro de elementosArray
         decimal[] elementosArray = new decimal[maximoElemento];
@@ -94,9 +82,13 @@ internal class Program
         Console.Write("\t\n\nEl máximo elemento del array es: " + elementosArray.Max() + ".");
         Console.WriteLine("Pulse una tecla para continuar");
         Console.ReadKey();
-    
-}
->>>>>>> EduSprint2.1
+    }
+
+    private static void Parte2()
+    {
+        // Pido el tamaño del array
+        Console.WriteLine("Número de elementos del array.\n");
+        int maximoElemeto = LeerNúmero(true);
 
         // Los voy introduciendo dentro de elementosArray
         decimal[] elementosArray = new decimal[maximoElemeto];
@@ -123,13 +115,15 @@ internal class Program
 
     private static void Parte3()
     {
-        int total;
         int[] arr;
 
         Console.WriteLine("Número de elementos del array.\n"); //Pedimos el total de elementos
-        arr = new int[LeerNúmero(true)];
+        arr = new int[LeerNúmero(true)]; //Inicializamos el array
         for (int i = 0; i < arr.Length; i++)
-            arr[i] = LeerNúmero(false, i);
+        {
+            Console.Clear();
+            arr[i] = LeerNúmero(false, i + 1); //Rellenamos el array
+        }
     }
 
     private static void Parte4()
