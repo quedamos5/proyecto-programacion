@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gomez\\OneDrive\\Documentos\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj": {}
+    "C:\\Users\\ModuloPRO\\Desktop\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gomez\\OneDrive\\Documentos\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj": {
+    "C:\\Users\\ModuloPRO\\Desktop\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gomez\\OneDrive\\Documentos\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj",
+        "projectUniqueName": "C:\\Users\\ModuloPRO\\Desktop\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj",
         "projectName": "Arrays",
-        "projectPath": "C:\\Users\\gomez\\OneDrive\\Documentos\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj",
-        "packagesPath": "C:\\Users\\gomez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gomez\\OneDrive\\Documentos\\proyecto-programacion\\Arrays\\Arrays\\obj\\",
+        "projectPath": "C:\\Users\\ModuloPRO\\Desktop\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj",
+        "packagesPath": "C:\\Users\\ModuloPRO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ModuloPRO\\Desktop\\proyecto-programacion\\Arrays\\Arrays\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gomez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ModuloPRO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
