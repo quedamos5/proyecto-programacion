@@ -8,8 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Numeros
-<<<<<<< HEAD
-build_property.ProjectDir = C:\Users\gomez\OneDrive\Documentos\proyecto-programacion\Numeros\Numeros\
-=======
-build_property.ProjectDir = C:\Users\Asus\Documents\Repositorios\proyecto-programacion\Numeros\Numeros\
->>>>>>> EduSprint2
+build_property.ProjectDir = C:\Users\ModuloPRO\Desktop\proyecto-programacion\Numeros\Numeros\
