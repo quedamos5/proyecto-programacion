@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "5ft3Yf2MVr9JhLmyp9QRzDM6iUsR+9BvIIJqt4HTDea/bO5n4x76W1+ETq4YRWrYM9OstwsO1yOkGk3Q1Vy7UQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\gomez\\OneDrive\\Documentos\\proyecto-programacion\\Numeros\\Numeros\\Numeros.csproj",
+=======
+  "dgSpecHash": "o3ImmOatDwHlL7mLaZSTW6RqJk16SeQ4e91wy2pz/QmdZSgpu9n2F3hZwJopdoPGT3kBoy9O4uNplljOZ97ESg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Asus\\Documents\\Repositorios\\proyecto-programacion\\Numeros\\Numeros\\Numeros.csproj",
+>>>>>>> EduSprint2
   "expectedPackageFiles": [],
   "logs": []
 }

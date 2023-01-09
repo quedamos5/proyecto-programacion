@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\gomez\\OneDrive\\Documentos\\proyecto-programacion\\Numeros\\Numeros\\Numeros.csproj": {}
   },
   "projects": {
@@ -12,9 +13,27 @@
         "projectPath": "C:\\Users\\gomez\\OneDrive\\Documentos\\proyecto-programacion\\Numeros\\Numeros\\Numeros.csproj",
         "packagesPath": "C:\\Users\\gomez\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\gomez\\OneDrive\\Documentos\\proyecto-programacion\\Numeros\\Numeros\\obj\\",
+=======
+    "C:\\Users\\Asus\\Documents\\Repositorios\\proyecto-programacion\\Numeros\\Numeros\\Numeros.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Asus\\Documents\\Repositorios\\proyecto-programacion\\Numeros\\Numeros\\Numeros.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Asus\\Documents\\Repositorios\\proyecto-programacion\\Numeros\\Numeros\\Numeros.csproj",
+        "projectName": "Numeros",
+        "projectPath": "C:\\Users\\Asus\\Documents\\Repositorios\\proyecto-programacion\\Numeros\\Numeros\\Numeros.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Documents\\Repositorios\\proyecto-programacion\\Numeros\\Numeros\\obj\\",
+>>>>>>> EduSprint2
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\gomez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> EduSprint2
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

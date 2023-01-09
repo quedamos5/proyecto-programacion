@@ -126,7 +126,25 @@ internal class Program
 
     private static void Parte6()
     {
-        //Aquí código
+        List<int> ocurrencias = new List<int>(); //Creamos lista para las cifras
+        bool rep = true; // Con el Bool determinamos si hemos encontrado una cifra repetida
+
+        string num = LeerNúmero().ToString();
+        for (int i = 0; i < num.Length && rep; i++) //Añadimos rep para no continuar en el bucle si sabemos que no hay cifras repetidas
+        {
+            if (!ocurrencias.Contains(num[i])) //Verificamos que la cifra actual no está dentro de la lista
+                ocurrencias.Add(num[i]); // Añadimos la cifra actual a la lista
+            else
+            {
+                Console.WriteLine("El número no tiene todas las cifras distintas");
+                rep = false;
+            }
+        }
+        if (rep)
+            Console.WriteLine("El número tiene todas las cifras distintas");
+        Console.WriteLine("Pulse una tecla para continuar");
+        Console.ReadKey();
+
     }
 
     private static int LeerNúmero()
