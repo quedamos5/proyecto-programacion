@@ -51,14 +51,13 @@ internal class Program
                     break;
             }
         } while (actual >= 1 && actual <= 7);
-        Console.ReadKey();
     }
 
     private static void Parte1()
     {
         // Pido el tamaño del array
         Console.WriteLine("Número de elementos del array.\n");
-        int maximoElemento = LeerNúmero(true);
+        int maximoElemento = LeerNúmero(false, true);
 
         // Los voy introduciendo dentro de elementosArray
         decimal[] elementosArray = new decimal[maximoElemento];
@@ -88,7 +87,7 @@ internal class Program
     {
         // Pido el tamaño del array
         Console.WriteLine("Número de elementos del array.\n");
-        int maximoElemeto = LeerNúmero(true);
+        int maximoElemeto = LeerNúmero(false, true);
 
         // Los voy introduciendo dentro de elementosArray
         decimal[] elementosArray = new decimal[maximoElemeto];
@@ -115,20 +114,33 @@ internal class Program
 
     private static void Parte3()
     {
-        int[] arr;
+        decimal[] arr;
 
         Console.WriteLine("Número de elementos del array.\n"); //Pedimos el total de elementos
-        arr = new int[LeerNúmero(true)]; //Inicializamos el array
+        arr = new decimal[LeerNúmero(false, true)]; //Inicializamos el array
         for (int i = 0; i < arr.Length; i++)
+            arr[i] = LeerDecimal(true, false, i + 1); //Rellenamos el array
+        Console.Write($"La mediana de [{String.Join(", ", arr)}] es: {Median(arr)}");
+        Console.ReadKey();
+
+        static decimal Median(decimal[] xs)
         {
-            Console.Clear();
-            arr[i] = LeerNúmero(false, i + 1); //Rellenamos el array
+            var ys = xs.OrderBy(x => x).ToList();
+            double mid = (ys.Count - 1) / 2.0;
+            return (ys[(int)(mid)] + ys[(int)(mid + 0.5)]) / 2;
         }
     }
 
     private static void Parte4()
     {
-        //Aquí código
+        decimal[] arr;
+
+        Console.WriteLine("Número de elementos del array.\n"); //Pedimos el total de elementos
+        arr = new decimal[LeerNúmero(false, true)]; //Inicializamos el array
+        for (int i = 0; i < arr.Length; i++)
+            arr[i] = LeerDecimal(true, false, i + 1); //Rellenamos el array
+        Console.Write($"La media de [{String.Join(", ", arr)}] es: {arr.Average()}");
+        Console.ReadKey();
     }
 
     private static void Parte5()
@@ -146,15 +158,32 @@ internal class Program
         //Aquí código
     }
 
-    private static int LeerNúmero(bool positivo = false, int sucesion = -1)
+    private static int LeerNúmero(bool borrar = false, bool positivo = false, int sucesion = -1)
     {
         int num;
         // Pedimos la variable y validamos que es un número entero
+        if (borrar)
+            Console.Clear();
         if (sucesion == -1)
-            Console.Write($"Introduzca un número entero {(positivo ? "positivo" : "")} por favor: ");
+            Console.Write($"Introduzca un número entero {(positivo ? "positivo " : "")}por favor: ");
         else
             Console.Write($"Introduzca el número {sucesion}: ");
         while (!Int32.TryParse(Console.ReadLine(), out num) && (!positivo || num > 0))
+            Console.WriteLine("Introduzca un número válido por favor: ");
+        return num;
+    }
+
+    private static Decimal LeerDecimal(bool borrar = false, bool positivo = false, int sucesion = -1)
+    {
+        decimal num;
+        // Pedimos la variable y validamos que es un número entero
+        if (borrar)
+            Console.Clear();
+        if (sucesion == -1)
+            Console.Write($"Introduzca un número entero {(positivo ? "positivo " : "")}por favor: ");
+        else
+            Console.Write($"Introduzca el número {sucesion}: ");
+        while (!Decimal.TryParse(Console.ReadLine(), out num) && (!positivo || num > 0))
             Console.WriteLine("Introduzca un número válido por favor: ");
         return num;
     }

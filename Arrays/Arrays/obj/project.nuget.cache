@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mhwUsx5CwR1Y8rOFxj00rguERLV3lu/Ndn+O8gGsSAM5WB9Mo/BA/A+kEy4rFSxKWJYe0uyhzX1Indis4kfPTg==",
+  "dgSpecHash": "688gOeZFA1dxLOBFyQSSwrtbsLSUKBpH8P3wyWZ4udTJwsDb61q6Ip/uQ1gfA/6EtN70zWg3os/ftnZ/f88jCw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ModuloPRO\\Desktop\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\ModuloPRO\\Desktop\\proyecto-programacion\\Arrays\\Arrays\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
