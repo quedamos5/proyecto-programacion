@@ -7,6 +7,9 @@
 - Edu &rarr; Realizar la parte 1.
 - Antonio &rarr; Realizar parte 4 y 5.
 # Sprint 3
+- Rafa &rarr; Realizar parte 2 y 3 de strings.
+- Guille &rarr; Realizar el menú y parte 2 de strings.
+- Andrés: &rarr; Realizar parte 5 y 6 de arrays.
 # Sprint 4
 ## Scrum
 [Enlace Trello](https://trello.com/b/19iF0Ymg/proyectoets)
