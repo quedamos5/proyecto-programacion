@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "5ft3Yf2MVr9JhLmyp9QRzDM6iUsR+9BvIIJqt4HTDea/bO5n4x76W1+ETq4YRWrYM9OstwsO1yOkGk3Q1Vy7UQ==",
+  "dgSpecHash": "D7K6tT304FzQRJJwsV34Vw3vE6eJKbQquV+S3XxrQcXuKa7y8MWiek6AEKa3oCMzQo3ZRUoexlkKLHJwujd+9A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gomez\\OneDrive\\Documentos\\proyecto-programacion\\Numeros\\Numeros\\Numeros.csproj",
-=======
-  "dgSpecHash": "o3ImmOatDwHlL7mLaZSTW6RqJk16SeQ4e91wy2pz/QmdZSgpu9n2F3hZwJopdoPGT3kBoy9O4uNplljOZ97ESg==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Asus\\Documents\\Repositorios\\proyecto-programacion\\Numeros\\Numeros\\Numeros.csproj",
->>>>>>> EduSprint2
+  "projectFilePath": "C:\\Users\\ModuloPRO\\Desktop\\proyecto-programacion\\Numeros\\Numeros\\Numeros.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\ModuloPRO\\Desktop\\proyecto-programacion\\Numeros\\Numeros\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
