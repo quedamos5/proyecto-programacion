@@ -49,6 +49,13 @@ internal class Program
         //Funcion Para ver si un string es Palíndromo
         Console.WriteLine("Introduzca la string");
         string cadena = Console.ReadLine() ?? "";
+        
+        // Rafa: Compruebo que la cadena no sea vacia
+        while (cadena.Length == 0) 
+        {
+            Console.Write("\nIntroduce una cadena no vacia: ");
+            cadena = Console.ReadLine();
+        }
 
         string cadenaReverse = Reverse(cadena);
         if (cadenaReverse == cadena)
@@ -68,12 +75,58 @@ internal class Program
 
     static void Parte2()
     {
-        //Código aquí
+        // Escribir el nombre todo en mayúsculas y todo en minúsculas
+        Console.Write("Introduce tu nombre: ");
+        string nombre = Console.ReadLine();
+        
+        // Compruebo que la cadena no sea vacia
+        while (nombre.Length == 0) 
+        {
+            Console.Write("\nIntroduce una cadena no vacia: ");
+            nombre = Console.ReadLine();
+        }
+        Console.WriteLine(nombre + " en mayúscula es " + nombre.ToUpper());
+        Console.WriteLine(nombre + " en minúscula es " + nombre.ToLower());
+        Console.Write("\nIntroduce una letra para salir al menu...");
+        Console.ReadKey();
     }
 
     static void Parte3()
     {
-        //Código aquí
+        // Devuelve el número de ocurrencias de una letra. Pido una cadena
+        Console.Write("Introduce una cadena: ");
+        string cadena = Console.ReadLine();
+        
+        // Compruebo que la cadena no sea vacia
+        while (cadena.Length == 0) 
+        {
+            Console.Write("\nIntroduce una cadena no vacia: ");
+            cadena = Console.ReadLine();
+         }
+
+        // Pido un caracter
+        Console.Write("\n\nIntroduce un caracter: ");
+        char caracter;
+        
+        // Compruebo que sea un caracter
+        while (!char.TryParse(Console.ReadLine(), out caracter)) 
+        {
+            Console.Write("\nERROR. Introduzca un caracter: ");
+        }
+    
+        // Recorro la cadena y si alguno de sus caracteres coincide con caracter numeroOcurrencias suma
+        int numeroOcurrencias = 0;
+        for (int i = 0; i < cadena.Length; i++) 
+        {
+            if (cadena[i] == caracter) 
+            {
+                numeroOcurrencias++;
+            }
+        }
+ 
+        Console.WriteLine(cadena + " contiene " + caracter + " " + numeroOcurrencias + " veces.");
+        Console.Write("\nIntroduce una letra para salir al menu...");
+        Console.ReadKey();
     }
 
     static void Parte4()
