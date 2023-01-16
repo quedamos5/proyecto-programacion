@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ModuloPRO\\Desktop\\proyecto-programacion\\Numeros\\Numeros\\Numeros.csproj": {}
+    "C:\\Users\\ModuloPRO\\Desktop\\proyecto-programacion\\Strings\\Strings\\Strings\\Strings.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ModuloPRO\\Desktop\\proyecto-programacion\\Numeros\\Numeros\\Numeros.csproj": {
+    "C:\\Users\\ModuloPRO\\Desktop\\proyecto-programacion\\Strings\\Strings\\Strings\\Strings.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ModuloPRO\\Desktop\\proyecto-programacion\\Numeros\\Numeros\\Numeros.csproj",
-        "projectName": "Numeros",
-        "projectPath": "C:\\Users\\ModuloPRO\\Desktop\\proyecto-programacion\\Numeros\\Numeros\\Numeros.csproj",
+        "projectUniqueName": "C:\\Users\\ModuloPRO\\Desktop\\proyecto-programacion\\Strings\\Strings\\Strings\\Strings.csproj",
+        "projectName": "Strings",
+        "projectPath": "C:\\Users\\ModuloPRO\\Desktop\\proyecto-programacion\\Strings\\Strings\\Strings\\Strings.csproj",
         "packagesPath": "C:\\Users\\ModuloPRO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ModuloPRO\\Desktop\\proyecto-programacion\\Numeros\\Numeros\\obj\\",
+        "outputPath": "C:\\Users\\ModuloPRO\\Desktop\\proyecto-programacion\\Strings\\Strings\\Strings\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ModuloPRO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -37,8 +37,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -50,6 +50,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
