@@ -148,13 +148,13 @@ internal class Program
     private static void Parte5()
     {
         Console.WriteLine("Introduce el tamaño de la array");
-        int tamanioArray = LeerEntero(false, true);
+        int tamanioArray = LeerEntero(false, true); //Lee el tamaño que tendra la array de valores
         Console.WriteLine($"Introduce los {tamanioArray} valores.");
         decimal[] array = new decimal[tamanioArray];
-
+        //Ir pidiendo al usuario tantos valores como espacios en la array
         for (int i = 0; i < tamanioArray; i++)
             array[i] = LeerDecimal(true, true, i+1);
-        Array.Sort(array);
+        Array.Sort(array);  //Ordena a traves de .Sort la array 
         Console.WriteLine("Array ordenada: (MAYOR A MENOR)");
         Console.WriteLine("[{0}]", string.Join(", ", array));
         Console.ReadKey();
@@ -163,13 +163,14 @@ internal class Program
     private static void Parte6()
     {
         Console.WriteLine("Introduce el tamaño de la array");
-        int tamanioArray = LeerEntero(false, true);
+        int tamanioArray = LeerEntero(false, true); //Lee el tamaño que tendra la array de valores
         Console.WriteLine($"Introduce los {tamanioArray} valores.");
         double[] array = new double[tamanioArray];
-
+        //Ir pidiendo al usuario tantos valores como espacios en la array
         for (int i = 0; i < tamanioArray; i++)
             array[i] = LeerDouble(true, true, i + 1);
-        double avg = array.Average();
+        //A partir de aqui se calcula la desviacion tipica, sacando medias, sumas y etc.
+        double avg = array.Average();       
         double sum = array.Sum(d => Math.Pow(d - avg, 2));
         Console.Write($"La desviacion de tipica de {string.Join(", ", array)} es: ");
         Console.WriteLine(Math.Sqrt((sum)/tamanioArray-1));
