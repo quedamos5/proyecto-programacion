@@ -42,4 +42,26 @@ internal class Program
         } while (actual >= 1 && actual <= 6);
         Console.ReadKey();
     }
+
+    static void Parte1()
+    {
+        //Funcion Para ver si un string es Palíndromo
+        Console.WriteLine("Introduzca la string");
+        string cadena = Console.ReadLine() ?? "";
+
+        string cadenaReverse = Reverse(cadena);
+        if (cadenaReverse == cadena)
+            Console.WriteLine("Es palíndromo");
+        else
+            Console.WriteLine("No es palíndromo");
+        Console.ReadKey();
+    }
+
+    static string Reverse(string cadena)
+    {
+        string rev = "";
+        for (int i = cadena.Length - 1; i >= 0; --i)
+            rev += cadena[i];
+        return rev;
+    }
 }
