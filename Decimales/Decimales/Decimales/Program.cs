@@ -34,14 +34,14 @@
     private static void Parte1()
     {
         Console.WriteLine("\nRedondear al alza de un número introducido\n");
-        decimal valor = LeerDecimal(true);
-        decimal result = (int)valor;
-        if (result < valor)
+        decimal valor = LeerDecimal(true); //Definimos la variable decimal valor y le pasamos un valor DECIMAL validado
+        decimal result = (int)valor; // Definimos result que recoge el valor entero del numero decimal introducido (TRUNCANDO)
+        if (result < valor) // Si el valor introducido al ser truncado son diferentes, le suma 1 al resultado asi redondeando hacia arriba (CEIL)
         {
             result++;
         }
         Console.WriteLine("\nReadondeo al alza (CEIL): {0}", result);
-        Console.ReadKey();
+        Console.ReadKey(); //Finalizar programa
     }
 
     private static void Parte2()
