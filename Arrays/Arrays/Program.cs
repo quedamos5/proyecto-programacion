@@ -178,8 +178,50 @@ internal class Program
     }
 
     private static void Parte7()
-    {
-        //Aquí código
+    {      
+        Console.Write("\nIntroduce el tamaño de la array: ");
+        int tamanioArray = 0;
+        while(!int.TryParse(Console.ReadLine(),out tamanioArray) || (tamanioArray <= 0)) 
+        {
+            Console.Write("\nERROR. Introduce un número entero positivo: ");
+        }
+
+        int[] arrayOriginal = new int[tamanioArray];
+        for (int i = 0; i < tamanioArray; i++) 
+        {
+            Console.Write("\nIntroduce los elementos del array (" + i + "): ");
+            while(!int.TryParse(Console.ReadLine(), out arrayOriginal[i])) 
+            {
+                Console.Write("\nIntroduce un número entero: ");
+            }
+        }
+    
+        int[] arrayBinario = new int[tamanioArray];
+        for (int i = 0; i < tamanioArray; i++) 
+        {
+            if (arrayOriginal[i] < tamanioArray) 
+            {
+                arrayBinario[i] = 0;
+        }   else 
+            {
+                arrayBinario[i] = 1;
+            }
+        }
+
+        Console.Write("\nArray original: ");
+        foreach(int i in arrayOriginal) 
+        {
+            Console.Write(i + " ");
+        }
+    
+        Console.Write("\nArray binario: ");
+        foreach (int i in arrayBinario) 
+        {
+            Console.Write(i + " ");
+        }
+
+        Console.Write("\nIntoduce una tecla para salir...");
+        Console.ReadKey();
     }
 
     private static int LeerEntero(bool borrar = false, bool positivo = false, int sucesion = -1)
