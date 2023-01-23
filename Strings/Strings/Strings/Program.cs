@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 
 internal class Program
 {
@@ -129,9 +130,40 @@ internal class Program
         Console.ReadKey();
     }
 
-    static void Parte4()
+    static void Parte4() 
     {
-        //Código aquí
+        // Pido la primera cadena y la compruebo
+        Console.Write("\nIntoduce la primera cadena: ");
+        string cadena01 = Console.ReadLine();
+        while(cadena01.Length == 0) 
+        {
+            Console.Write("\nERROR. Introduce una cadena no vacia: ");
+            cadena01 = Console.ReadLine();
+        }
+
+        // Pido la segunda cadena y la compruebo
+        Console.Write("\nIntoduce la segunda cadena: ");
+        string cadena02 = Console.ReadLine();
+        while (cadena02.Length == 0) 
+        {
+            Console.Write("\nERROR. Introduce una cadena no vacia: ");
+            cadena02 = Console.ReadLine();
+        }
+
+        // Pido al usuario el número de veces que quiere que se repita la cadena
+        Console.Write("\nIntroduce el número de veces quieres que se repita la cadena: ");
+        int numeroVeces = 0;
+        while(!int.TryParse(Console.ReadLine(), out numeroVeces) || (numeroVeces <= 0)) 
+        {
+            Console.Write("\nERROR. Introduce un número entero positivo: ");
+        }
+
+        for (int i = 0; i < numeroVeces; i++) 
+        {
+            Console.WriteLine((i + 1) + " -> " + cadena01 + " " + cadena02);
+        }
+        Console.Write("\nIntroduce una letra para salir al menu...");
+        Console.ReadKey();
     }
 
     static void Parte5()
