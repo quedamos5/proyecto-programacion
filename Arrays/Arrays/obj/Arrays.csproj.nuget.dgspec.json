@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "M:\\Desktop\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj": {}
+    "M:\\Desktop\\ProgETS\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj": {}
   },
   "projects": {
-    "M:\\Desktop\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj": {
+    "M:\\Desktop\\ProgETS\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "M:\\Desktop\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj",
+        "projectUniqueName": "M:\\Desktop\\ProgETS\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj",
         "projectName": "Arrays",
-        "projectPath": "M:\\Desktop\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj",
+        "projectPath": "M:\\Desktop\\ProgETS\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj",
         "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "M:\\Desktop\\proyecto-programacion\\Arrays\\Arrays\\obj\\",
+        "outputPath": "M:\\Desktop\\ProgETS\\proyecto-programacion\\Arrays\\Arrays\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
