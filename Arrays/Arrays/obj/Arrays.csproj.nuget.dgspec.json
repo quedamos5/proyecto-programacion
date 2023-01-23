@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\gomez\\OneDrive\\Documentos\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\gomez\\OneDrive\\Documentos\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj",
         "packagesPath": "C:\\Users\\gomez\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\gomez\\OneDrive\\Documentos\\proyecto-programacion\\Arrays\\Arrays\\obj\\",
+=======
+    "M:\\Desktop\\ProgETS\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj": {}
+  },
+  "projects": {
+    "M:\\Desktop\\ProgETS\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "M:\\Desktop\\ProgETS\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj",
+        "projectName": "Arrays",
+        "projectPath": "M:\\Desktop\\ProgETS\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj",
+        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
+        "outputPath": "M:\\Desktop\\ProgETS\\proyecto-programacion\\Arrays\\Arrays\\obj\\",
+>>>>>>> AndresSprint4
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gomez\\AppData\\Roaming\\NuGet\\NuGet.Config",

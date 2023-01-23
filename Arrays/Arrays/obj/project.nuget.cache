@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "ORHSYst5OoJEjdJe7y2nLzaRXKmTN2zKDpycbASmjyOdLgFk+krmT0H9f7XDTzT6a/DpybOSmNGcMZ99UiodTw==",
   "success": true,
   "projectFilePath": "C:\\Users\\gomez\\OneDrive\\Documentos\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj",
+=======
+  "dgSpecHash": "ijo3ru+pXvvkJ8snH436vRdNSpHc+B7wnPncosQAH3cFgxLThzZELZ9niyLvY7sB3Uo/MVg+sxNbBORX75x75w==",
+  "success": true,
+  "projectFilePath": "M:\\Desktop\\ProgETS\\proyecto-programacion\\Arrays\\Arrays\\Arrays.csproj",
+>>>>>>> AndresSprint4
   "expectedPackageFiles": [],
   "logs": []
 }

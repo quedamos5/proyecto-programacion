@@ -1,0 +1,15 @@
+M:\Desktop\ProgETS\proyecto-programacion\Decimales\Decimales\Decimales\obj\Debug\net6.0\Decimales.csproj.AssemblyReference.cache
+M:\Desktop\ProgETS\proyecto-programacion\Decimales\Decimales\Decimales\obj\Debug\net6.0\Decimales.GeneratedMSBuildEditorConfig.editorconfig
+M:\Desktop\ProgETS\proyecto-programacion\Decimales\Decimales\Decimales\obj\Debug\net6.0\Decimales.AssemblyInfoInputs.cache
+M:\Desktop\ProgETS\proyecto-programacion\Decimales\Decimales\Decimales\obj\Debug\net6.0\Decimales.AssemblyInfo.cs
+M:\Desktop\ProgETS\proyecto-programacion\Decimales\Decimales\Decimales\obj\Debug\net6.0\Decimales.csproj.CoreCompileInputs.cache
+M:\Desktop\ProgETS\proyecto-programacion\Decimales\Decimales\Decimales\bin\Debug\net6.0\Decimales.exe
+M:\Desktop\ProgETS\proyecto-programacion\Decimales\Decimales\Decimales\bin\Debug\net6.0\Decimales.deps.json
+M:\Desktop\ProgETS\proyecto-programacion\Decimales\Decimales\Decimales\bin\Debug\net6.0\Decimales.runtimeconfig.json
+M:\Desktop\ProgETS\proyecto-programacion\Decimales\Decimales\Decimales\bin\Debug\net6.0\Decimales.dll
+M:\Desktop\ProgETS\proyecto-programacion\Decimales\Decimales\Decimales\bin\Debug\net6.0\Decimales.pdb
+M:\Desktop\ProgETS\proyecto-programacion\Decimales\Decimales\Decimales\obj\Debug\net6.0\Decimales.dll
+M:\Desktop\ProgETS\proyecto-programacion\Decimales\Decimales\Decimales\obj\Debug\net6.0\refint\Decimales.dll
+M:\Desktop\ProgETS\proyecto-programacion\Decimales\Decimales\Decimales\obj\Debug\net6.0\Decimales.pdb
+M:\Desktop\ProgETS\proyecto-programacion\Decimales\Decimales\Decimales\obj\Debug\net6.0\Decimales.genruntimeconfig.cache
+M:\Desktop\ProgETS\proyecto-programacion\Decimales\Decimales\Decimales\obj\Debug\net6.0\ref\Decimales.dll

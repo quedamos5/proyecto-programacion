@@ -246,11 +246,11 @@ internal class Program
         if (borrar)
             Console.Clear();
         if (sucesion == -1)
-            Console.Write($"Introduzca un número entero {(positivo ? "positivo " : "")}por favor: ");
+            Console.Write($"Introduzca un número {(positivo ? "positivo " : "")}por favor: ");
         else
             Console.Write($"Introduzca el número {sucesion}: ");
         while (!Decimal.TryParse(Console.ReadLine(), out num) && (!positivo || num > 0))
-            Console.WriteLine("Introduzca un número válido por favor: ");
+            Console.WriteLine("Introduzca un número válido por favor: VALOR VALIDO: DECIMAL");
         return num;
     }
     private static Double LeerDouble(bool borrar = false, bool positivo = false, int sucesion = -1)
@@ -260,7 +260,7 @@ internal class Program
         if (borrar)
             Console.Clear();
         if (sucesion == -1)
-            Console.Write($"Introduzca un número entero {(positivo ? "positivo " : "")}por favor: ");
+            Console.Write($"Introduzca un número {(positivo ? "positivo " : "")}por favor: ");
         else
             Console.Write($"Introduzca el número {sucesion}: ");
         while (!Double.TryParse(Console.ReadLine(), out num) && (!positivo || num > 0))
