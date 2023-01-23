@@ -1,5 +1,5 @@
-﻿using Microsoft.VisualBasic;
-using System;
+﻿using System;
+using System.ComponentModel;
 
 internal class Program
 {
@@ -168,11 +168,30 @@ internal class Program
 
     static void Parte5()
     {
-        //Código aquí
+        Console.WriteLine("Introduce una cadena no vacía");
+        string cadena = Console.ReadLine() ?? "", cadenaFinal = "";
+        for (int i = 0; i < cadena.Length; i++)
+        {
+            cadenaFinal += cadena[i].ToString() + cadena[i].ToString();
+        }
+        Console.WriteLine(cadenaFinal);
+        Console.WriteLine("Pulse una tecla para continuar");
+        Console.ReadKey();
     }
 
     static void Parte6()
     {
+        Console.WriteLine("Introduce una cadena no vacía");
+        string cadena = Console.ReadLine() ?? "";
+        Console.WriteLine("Introduce que deseas borrar de la cadena original");
+        string cadena2 = Console.ReadLine() ?? "", cadenaFinal = "";
+        cadena = cadena.ToLower();
+        cadena2 = cadena2.ToLower();
+        cadenaFinal = cadena.Replace(cadena2, "");
+        Console.WriteLine(cadenaFinal);
+        Console.WriteLine("Pulse una tecla para continuar");
+        Console.ReadKey();
+        
         //Código aquí
     }
 }
