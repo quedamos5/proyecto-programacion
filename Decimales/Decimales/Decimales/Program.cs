@@ -1,6 +1,6 @@
 ﻿internal class Program
 {
-    private static void Main(string[] args)
+    private static void Main()
     {
         int actual;
 
@@ -64,7 +64,7 @@
             Console.Write($"Introduzca un número {(positivo ? "positivo " : "")}por favor: ");
         else
             Console.Write($"Introduzca el número {sucesion}: ");
-        while (!Decimal.TryParse(Console.ReadLine(), out num) && (!positivo || num > 0))
+        while (!Decimal.TryParse(Console.ReadLine().Replace('.', ','), out num) && (!positivo || num > 0))
             Console.WriteLine("Introduzca un número válido por favor: VALOR VALIDO: DECIMAL");
         return num;
     }
