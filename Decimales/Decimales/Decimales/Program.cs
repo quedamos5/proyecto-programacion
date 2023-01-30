@@ -46,11 +46,29 @@
 
     private static void Parte2()
     {
-
+        Console.WriteLine("Introduce el número decimal a eliminar sus deciamles.");
+        decimal numeroDecimal = LeerDecimal(true);
+        Console.WriteLine(Math.Truncate(numeroDecimal));
+        Console.ReadKey();
     }
 
     private static void Parte3()
     {
+        Console.WriteLine("Introduce los 3 coeficientes");
+        decimal a = LeerDecimal(true),
+                b = LeerDecimal(true),
+                c = LeerDecimal(true); // -b +- raiz(b^2 - 4ac) / 2a ecuacion de segundo grado
+
+        decimal div = 2 * a, // division de la ecuacion
+                bNeg = b * (-1), // volvemos el parametro b negativo
+                insideSqrt = Convert.ToDecimal(Math.Pow(Convert.ToDouble(b), 2)) - 4 * a * c, // Sacamos la operacion de dentro de la raiz
+                sqrt = Convert.ToDecimal(Math.Sqrt(Convert.ToDouble(insideSqrt))), // Hacemos la raiz
+                // Resultados de la ecuacion de segundo grado
+                operationPositive = (bNeg + sqrt) / div,
+                operationNegative = (bNeg - sqrt) / div;
+        Console.WriteLine("x1 = " + operationPositive);
+        Console.WriteLine("x2 = " + operationNegative);
+        Console.ReadKey();
 
     }
 
