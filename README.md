@@ -14,5 +14,8 @@
 - Rafa &rarr; Realizar parte 7 de arrays y parte 4 de strings.
 - Andrés &rarr; Realizar menú y parte 1 de decimales.
 - Guille &rarr; Realizar parte 5 y 6 de strings.
+# Sprint 5
+- Rafa &rarr; Realizar parte 2 decimales.
+- Guille &rarr; Realizar parte 3 deciamles.
 ## Scrum
 [Enlace Trello](https://trello.com/b/19iF0Ymg/proyectoets)
